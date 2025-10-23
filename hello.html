@@ -3,190 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简洁美观的示例页面</title>
+    <title>彩色文本示例</title>
     <style>
-        /* 基础样式与重置 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* 定义颜色样式 */
+        .part1 { color: #FF0000; } /* 红色，用于主题部分 */
+        .part2 { color: #00FF00; } /* 绿色，用于组号 */
+        .part3 { color: #0000FF; } /* 蓝色，用于姓名列表 */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f0f2f5;
-        }
-        a {
-            text-decoration: none;
-            color: #4a6ee0;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #2c4fc1;
-            text-decoration: underline;
-        }
-
-        /* 布局与容器 */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* 头部样式 */
-        header {
-            background: linear-gradient(135deg, #4a6ee0 0%, #2c4fc1 100%);
-            color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        .nav-links li {
-            margin-left: 2rem;
-        }
-        .nav-links a {
-            color: #fff;
-            font-weight: 500;
-        }
-
-        /* 主横幅区域 */
-        .hero {
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 5rem 0;
-            background: #fff;
-            margin-bottom: 2rem;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 50px;
+            background-color: #f0f0f0;
         }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #666;
-        }
-
-        /* 内容卡片区域 */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem 0;
-        }
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .card h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-        .card p {
-            color: #666;
-        }
-
-        /* 页脚样式 */
-        footer {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero {
-                padding: 3rem 0;
-            }
+        p {
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- 页面头部 -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">我的网站</div>
-                <ul class="nav-links">
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#services">服务</a></li>
-                    <li><a href="#contact">联系</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- 主横幅 -->
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>欢迎来到简洁美观的网页</h1>
-            <p>这是一个使用纯HTML和CSS构建的现代化网页示例，展示了清晰的布局和悦目的设计。</p>
-        </div>
-    </section>
-
-    <!-- 主要内容区域 -->
-    <main class="container">
-        <section class="features">
-            <article class="card">
-                <h3>优雅设计</h3>
-                <p>采用现代设计原则，注重排版、间距和色彩搭配，创造舒适的视觉体验。</p>
-            </article>
-            <article class="card">
-                <h3>响应式布局</h3>
-                <p>使用CSS Grid和Flexbox技术，确保在各种设备上都能完美显示。</p>
-            </article>
-            <article class="card">
-                <h3>性能优化</h3>
-                <p>代码简洁高效，加载速度快，提供流畅的用户体验。</p>
-            </article>
-        </section>
-    </main>
-
-    <!-- 页脚 -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 简洁美观网页示例. 所有权利保留.</p>
-        </div>
-    </footer>
+    <p>
+        <span class="part1">计算机网络与技术之万维网</span>，
+        <span class="part2">第五组</span>，
+        <span class="part3">胡嘉怡，刘倩，秦颖</span>
+    </p>
 </body>
 </html>
-
